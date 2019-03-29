@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 public class MethodExecuteTimeViewer {
 
     // service层的统计耗时切面，类型必须为final String类型的,注解里要使用的变量只能是静态常量类型的
-    public static final String POINT = "execution (* com.packtpub.restapp.*.*(..))";
+    public static final String POINT = "execution (* com.packtpub.*.*.*(..))";
     private static final long TWO_MILLISECONDS = 2;
     private static Log logger = LogFactory.getLog(MethodExecuteTimeViewer.class);
 
